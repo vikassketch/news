@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "name": "Java",
+      "title":"Java is easy and the best language to learn Object Oriented Programming.",
+      "link":"https://dev.java/"
+    },{
+      "name": "HTML",
+      "title":"HTML is not a programming language.It is for the markup of webpages",
+      "link":"https://html.com/"
+    },
+    {
+      "name": "CSS",
+      "title":"CSS is easy and used for designing of webpages.",
+      "link":"https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "React",
+      "title":"React is most popular frontend language to learn Web Development.",
+      "link":"https://reactjs.org/"
+    }
+  ],
+  "newsCategories":[
+    {
+      "name":["Sports","Business","Lifestyle","Food"]
+    }
+  ],
+  "about": [
+    {
+      "name": "hikeUp",
+      "title": "Full Stack Web Development",
+      "body":"The full stack web development course is a 100% live program developed to learn job ready software skills from industry experts. Complete the course to master these skills and get a guaranteed job opportunity."
+     
+    }
+  ]
+}
