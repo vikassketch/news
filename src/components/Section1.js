@@ -3,7 +3,7 @@ import showcase from '../img/showcase.svg'
 
 const Section1 = () => {
   return (
-   <section className='bg-dark text-light p-5'>
+   <section className='bg-dark text-light p-5' id='sec'>
       <div className='container'>
      
         <div className="d-flex">

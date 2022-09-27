@@ -13,6 +13,7 @@ const Categories = ({categories}) => {
 
 
         </div>
+        
       
     </section>
   );
