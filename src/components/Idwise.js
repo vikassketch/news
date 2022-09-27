@@ -16,8 +16,11 @@ const Idwise = () => {
       .then((res) => {
        const result=res.data
         setData(result.articles)
+        // console.log(result)
         
       })
+
+      
         // const getNews=async()=>{
         //     // console.log("in news")
             
@@ -33,24 +36,31 @@ const Idwise = () => {
         //   getNews()
     },[])
 
-//    {newsData && const searchData=()=>{
+    const searchData=()=>{
+
+        console.log("hi")
         
-//     newsData.forEach(data => {
+        newsData.forEach(data => {
+    
+            if(data.source.name===id1){
+    
+                   setParticular(data);
+                //    console.log(data)
+                   
+                   
+            }
+    
+           
+            
+        });
+    } 
 
-//         if(data.source.name===id1){
 
-//                setParticular(data);
-//                console.log(data)
-               
-               
-//         }
+    newsData && searchData()
 
-       
-        
-//     });
-// } 
-// searchData()
-// } 
+   
+  
+
 
    
 
