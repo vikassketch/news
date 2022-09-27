@@ -40,20 +40,30 @@ const Idwise = () => {
     const searchData=(articles)=>{
 
         console.log("hi")
-        
-        articles.forEach(data => {
-    
-            if(data.source.name===id1){
-    
-                   setParticular(data);
-                   console.log(data)
-                   
-                   
+        let i=0;
+
+        for(i;i<articles.length;i++){
+            if(articles[i].source.name===id1){
+                const data=articles[i]
+                setParticular(data);
+                break;
             }
+            console.log(i)
+        }
+        
+        // articles.forEach(data => {
+    
+        //     if(data.source.name===id1){
+    
+        //            setParticular(data);
+        //            console.log(data)
+                   
+                   
+        //     }
     
            
             
-        });
+        // });
     } 
 
 
