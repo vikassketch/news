@@ -5,7 +5,7 @@ import { useEffect,useState } from 'react';
 import axios from 'axios'
 
 const Idwise = () => {
-    const [newsData,setData]=useState()
+    // const [newsData,setData]=useState()
     const [particularData,setParticular]=useState({})
     let { id1 }=useParams();
     console.log(id1)
@@ -15,7 +15,8 @@ const Idwise = () => {
         axios.get('https://gnews.io/api/v4/search?q=example&token=bd6ebe4b646b8ec72733fdaff4f99fcf&lang=en')
       .then((res) => {
        const result=res.data
-        setData(result.articles)
+        // setData(result.articles)
+        searchData(result.articles)
         // console.log(result)
         
       })
@@ -36,16 +37,16 @@ const Idwise = () => {
         //   getNews()
     },[])
 
-    const searchData=()=>{
+    const searchData=(articles)=>{
 
         console.log("hi")
         
-        newsData.forEach(data => {
+        articles.forEach(data => {
     
             if(data.source.name===id1){
     
                    setParticular(data);
-                //    console.log(data)
+                   console.log(data)
                    
                    
             }
@@ -56,7 +57,7 @@ const Idwise = () => {
     } 
 
 
-    newsData && searchData()
+    
 
    
   
@@ -70,6 +71,11 @@ const Idwise = () => {
     <Navbar3/>
     <div className='container final'>
         <div className='card'>
+            <div className='card-body'>
+                <h5 className='card-title'>{particularData.title}</h5>
+                <p className='card-text'>{particularData.content}</p>
+
+            </div>
 
         </div>
 
